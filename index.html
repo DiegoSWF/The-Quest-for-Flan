@@ -9,20 +9,37 @@
       color: #00FF00;
       font-family: 'Courier New', monospace;
       text-align: center;
+      margin: 0;
     }
+
+    h1 {
+      font-size: 26px;
+      margin-top: 30px;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
+
     #game {
-      margin-top: 40px;
+      margin-top: 20px;
+      border: 4px ridge #00FF00;
+      display: inline-block;
+      width: 480px;
+      height: 432px;
     }
   </style>
 </head>
 <body>
 
+  <h1>Ghostly Gambit</h1>
   <div id="game"></div>
 
   <script>
     EJS_player = "#game";
     EJS_core = "gb";
-    EJS_gameUrl = "https://diegoswf.github.io/The-Quest-for-Flan/";
+    EJS_gameUrl = "https://diegoswf.github.io/The-Quest-for-Flan/The Quest For Flan (Full Game).gb";
     EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
   </script>
   <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
